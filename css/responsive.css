@@ -1,0 +1,87 @@
+
+/* موبایل */
+@media (max-width: 768px) {
+
+    .header .logo{
+      display: none;
+    
+    }
+    .header-nav{
+      display: none;
+    }
+  
+  
+    .baner .container {
+  
+    align-items: center;
+    flex-direction: column;
+  }
+  .baner-title{
+    position: relative;
+    margin:50px auto;
+  }
+  .baner .slider{
+    right: auto;
+    top: auto;
+  
+  }
+  
+  .baner .list{
+    width: 350px;
+    height: 250px;
+    margin: auto;
+  }
+  
+  
+  
+  
+  .baner .li {
+    border-radius: 30px; 
+    width: 450px;
+    height: 110px;
+    top: 350px;
+    right: -250px;
+  }
+  .baner .list-picture{
+    width: 500px;
+    height: 125px;
+    right: -300px;
+    top: 340px;
+  }
+  .list-picture .item1{
+    width: 90px;
+    height: 130px;
+    border-radius: 20px;
+  }
+  .baner .btns{
+    top: 520px;
+    right: 250px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  /* تبلت */
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  /* لپ‌تاپ */
+  @media (min-width: 1025px) and (max-width: 1440px) {}
+  
+  /* دسکتاپ بزرگ */
+  @media (min-width: 1441px) {}
+  
