@@ -317,7 +317,7 @@ a {
 }
 
 .activPrev {
-  animation: showPrev 1s forwards;
+  animation: showPrev 0.8s forwards;
 }
 
 .baner .li {
@@ -326,7 +326,7 @@ a {
   height: 180px;
   top: -53px;
   right:-680px;
-  z-index: -1;
+  z-index: -2;
   border-radius: 30px;
   background-image: url(../images/17.jpeg);
   background-size: cover;
@@ -408,19 +408,19 @@ a {
 
 
 .moveRight {
-  animation: moveRight 1s ease-in forwards;
+  animation: moveRight 0.6s ease-in forwards;
 }
 
 .moveLeft {
-  animation: moveLeft 1s linear forwards;
+  animation: moveLeft 0.6s linear forwards;
 }
 
 .moveWidth {
-  animation: moveWidth 1s linear forwards;
+  animation: moveWidth 0.6s linear forwards;
 }
 
 .moveWidthBack {
-  animation: moveWidthBack 1s linear forwards;
+  animation: moveWidthBack 0.6s linear forwards;
 }
 
 

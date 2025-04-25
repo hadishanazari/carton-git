@@ -18,8 +18,8 @@ let btnPrev = document.getElementById("btnPrev");
 let all = Array.from(document.querySelectorAll(".item"));
 let items = Array.from(document.querySelectorAll(".item1"));
 let n = all.length;
-console.log(window.innerWidth);
 
+let h = [0, 1, 2, 3, 4];
 
 btnNext.addEventListener("click", () => {
 
@@ -30,6 +30,7 @@ all.forEach((item , index) => {
 
   list.children[0].classList.add("activNext");
   list.appendChild(list.firstElementChild);
+
 
 
   items.forEach((item, index) => {
@@ -59,13 +60,15 @@ btnPrev.addEventListener("click", () => {
     item.style.zIndex = 0;
   });
 
-  list.children[4].style.zIndex = 5;
-  list.children[4].classList.add("activPrev");
-  list.insertBefore(list.lastElementChild, list.firstElementChild);
+    list.insertBefore(list.lastElementChild, list.firstElementChild);
+    list.children[0].classList.add("activPrev");
+    list.children[0].style.zIndex = 5;
 
   items.forEach((item , index) => {
     item.classList.remove("moveLeft" , "moveRight");
   });
+
+  
   listPic.classList.add("moveWidthBack");
 
   listPic.insertBefore(listPic.lastElementChild, listPic.firstElementChild);
@@ -75,7 +78,11 @@ btnPrev.addEventListener("click", () => {
   setTimeout(() => {
     listPic.classList.remove("moveWidth" , "moveWidthBack");
     btnPrev.disabled = false;
+    list.children[0].style.zIndex = -1;
   }, 1000)
+  setTimeout(() => {
+    list.children[0].style.zIndex = -1;
+  }, 500)
 
 });
 
@@ -146,21 +153,21 @@ productsBoxBody.forEach((productsBoxBody) => {
 
 //////////////////////scrol
 ///////////
-function revealOnScroll() {
-  const box = document.querySelector('.samplesBox');
-  const boxBodies = document.querySelectorAll('.samplesBoxBody');
-  const windowHeight = window.innerHeight;
-  const boxTop = box.getBoundingClientRect().top;
-  const revealPoint = 300;
+// function revealOnScroll() {
+//   const box = document.querySelector('.samplesBox');
+//   const boxBodies = document.querySelectorAll('.samplesBoxBody');
+//   const windowHeight = window.innerHeight;
+//   const boxTop = box.getBoundingClientRect().top;
+//   const revealPoint = 300;
 
-  if (boxTop < windowHeight - revealPoint) {
-    boxBodies.forEach((body, index) => {
-      setTimeout(() => {
-        body.classList.add('scrollActive');
-      }, index * 100);
-    });
-  }
-}
+//   if (boxTop < windowHeight - revealPoint) {
+//     boxBodies.forEach((body, index) => {
+//       setTimeout(() => {
+//         body.classList.add('scrollActive');
+//       }, index * 100);
+//     });
+//   }
+// }
 
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
+// window.addEventListener('scroll', revealOnScroll);
+// window.addEventListener('load', revealOnScroll);
