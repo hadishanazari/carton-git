@@ -46,7 +46,7 @@ all.forEach((item , index) => {
   setTimeout(() => {
     listPic.classList.remove("moveWidth" , "moveWidthBack");
     btnNext.disabled = false;
-  }, 1000)
+  }, 650)
 
 });
 
@@ -75,7 +75,7 @@ btnPrev.addEventListener("click", () => {
   setTimeout(() => {
     listPic.classList.remove("moveWidth" , "moveWidthBack");
     btnPrev.disabled = false;
-  }, 1000)
+  }, 650)
 
 });
 

@@ -250,7 +250,7 @@ a {
   height: 100%;
   border-radius: 30px;
   position: absolute;
-  transition: left 3s ease;
+  transition: left 2s ease;
 }
 
 
@@ -313,11 +313,11 @@ a {
 }
 
 .activNext {
-  animation: show 1.5s forwards;
+  animation: show 1s forwards;
 }
 
 .activPrev {
-  animation: showPrev 1.3s forwards;
+  animation: showPrev 0.9s forwards;
 }
 
 .baner .li {
@@ -408,19 +408,19 @@ a {
 
 
 .moveRight {
-  animation: moveRight 1s ease-in forwards;
+  animation: moveRight 0.65s ease-in forwards;
 }
 
 .moveLeft {
-  animation: moveLeft 1s linear forwards;
+  animation: moveLeft 0.65s linear forwards;
 }
 
 .moveWidth {
-  animation: moveWidth 1s linear forwards;
+  animation: moveWidth 0.65s linear forwards;
 }
 
 .moveWidthBack {
-  animation: moveWidthBack 1s linear forwards;
+  animation: moveWidthBack 0.65s linear forwards;
 }
 
 
@@ -561,7 +561,7 @@ a {
   justify-content: center;
   width: 90%;
   height: 350px;
-  border: solid 2px gold;
+  border: solid 5px gold;
   border-top-left-radius: 100% 100px;
   border-top-right-radius: 100% 100px;
   border-bottom-right-radius: 100% 100px;
