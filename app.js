@@ -80,7 +80,7 @@ btnPrev.addEventListener("click", () => {
 });
 
 
-cube
+////cube
 
 const productsBoxBody = document.querySelectorAll('.productsBoxBody');
 
