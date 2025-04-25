@@ -80,87 +80,87 @@ btnPrev.addEventListener("click", () => {
 });
 
 
-// cube
+cube
 
-// const productsBoxBody = document.querySelectorAll('.productsBoxBody');
-
-
-// productsBoxBody.forEach((productsBoxBody) => {
-//   const cube = productsBoxBody.querySelector('.cube');
-//   const shadow = productsBoxBody.querySelector('.shadowCube');
-//   let isDragging = false;
-//   let startX, startY;
-//   let rotationX = 0, rotationY = 0;
-
-//   cube.classList.add('add-rotateY')
-//   productsBoxBody.addEventListener('mousedown', (e) => {
-
-//     isDragging = !isDragging;
-
-//     if (isDragging) {
-//       startX = e.clientX;
-//       startY = e.clientY;
-//     }
+const productsBoxBody = document.querySelectorAll('.productsBoxBody');
 
 
-//     if (isDragging) {
-//       cube.classList.remove('add-rotateY')
+productsBoxBody.forEach((productsBoxBody) => {
+  const cube = productsBoxBody.querySelector('.cube');
+  const shadow = productsBoxBody.querySelector('.shadowCube');
+  let isDragging = false;
+  let startX, startY;
+  let rotationX = 0, rotationY = 0;
 
-//     } else {
-//       cube.classList.add('add-rotateY')
+  cube.classList.add('add-rotateY')
+  productsBoxBody.addEventListener('mousedown', (e) => {
 
-//     }
+    isDragging = !isDragging;
 
-//   });
-
-//   document.addEventListener('mousemove', (e) => {
-//     if (!isDragging) return;
-
-//     let deltaX = e.clientX - startX;
-//     let deltaY = e.clientY - startY;
-
-//     rotationY += deltaX * 0.5;
-//     rotationX -= deltaY * 0.5;
-
-//     cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
-
-//     let shadowOffsetX = rotationY * 0.1;
-//     let shadowOffsetY = rotationX * 0.1;
-
-//     const shadowX = Math.max(Math.min(shadowOffsetX, 10), -10);
-//     const shadowY = Math.max(Math.min(shadowOffsetY, 10), -10);
-
-//     shadow.style.transform = `translate(${shadowX}px, ${Math.abs(shadowY)}px)`;
+    if (isDragging) {
+      startX = e.clientX;
+      startY = e.clientY;
+    }
 
 
-//     startX = e.clientX;
-//     startY = e.clientY;
-//   });
-//   document.addEventListener('mouseup', (e) => {
-//     isDragging = false;
-//     cube.classList.add('add-rotateY')
+    if (isDragging) {
+      cube.classList.remove('add-rotateY')
 
-//   });
+    } else {
+      cube.classList.add('add-rotateY')
 
-// });
+    }
 
-// //////////////////////scrol
-// ///////////
-// function revealOnScroll() {
-//   const box = document.querySelector('.samplesBox');
-//   const boxBodies = document.querySelectorAll('.samplesBoxBody');
-//   const windowHeight = window.innerHeight;
-//   const boxTop = box.getBoundingClientRect().top;
-//   const revealPoint = 300;
+  });
 
-//   if (boxTop < windowHeight - revealPoint) {
-//     boxBodies.forEach((body, index) => {
-//       setTimeout(() => {
-//         body.classList.add('scrollActive');
-//       }, index * 100);
-//     });
-//   }
-// }
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
 
-// window.addEventListener('scroll', revealOnScroll);
-// window.addEventListener('load', revealOnScroll);
+    let deltaX = e.clientX - startX;
+    let deltaY = e.clientY - startY;
+
+    rotationY += deltaX * 0.5;
+    rotationX -= deltaY * 0.5;
+
+    cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+
+    let shadowOffsetX = rotationY * 0.1;
+    let shadowOffsetY = rotationX * 0.1;
+
+    const shadowX = Math.max(Math.min(shadowOffsetX, 10), -10);
+    const shadowY = Math.max(Math.min(shadowOffsetY, 10), -10);
+
+    shadow.style.transform = `translate(${shadowX}px, ${Math.abs(shadowY)}px)`;
+
+
+    startX = e.clientX;
+    startY = e.clientY;
+  });
+  document.addEventListener('mouseup', (e) => {
+    isDragging = false;
+    cube.classList.add('add-rotateY')
+
+  });
+
+});
+
+//////////////////////scrol
+///////////
+function revealOnScroll() {
+  const box = document.querySelector('.samplesBox');
+  const boxBodies = document.querySelectorAll('.samplesBoxBody');
+  const windowHeight = window.innerHeight;
+  const boxTop = box.getBoundingClientRect().top;
+  const revealPoint = 300;
+
+  if (boxTop < windowHeight - revealPoint) {
+    boxBodies.forEach((body, index) => {
+      setTimeout(() => {
+        body.classList.add('scrollActive');
+      }, index * 100);
+    });
+  }
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
