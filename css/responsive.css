@@ -40,7 +40,7 @@
     width: 500px;
     height: 125px;
     top: 61px; 
-    right: -245px;
+    right: -246px;
   }
   .list-picture .item1{
     width: 75px;
@@ -56,6 +56,15 @@
     border-radius: 15px;
   }
   
+  /* .list .item:nth-child(5) {
+    width: 75px;
+    position: absolute;
+    height: 110px;
+    top: 255.5px;
+    right: 33px;
+    z-index: 5;
+    border-radius: 15px;
+  } */
   
 @keyframes show {
   from {
@@ -183,6 +192,16 @@
     right: 200px;
   }
   .item img{
+    border-radius: 15px;
+  }
+  
+  .list .item:nth-child(5) {
+    width: 112.5px;
+    height: 165px;
+    position: absolute;
+    top: 330px;
+    right: 33px;
+    z-index: 5;
     border-radius: 15px;
   }
   
