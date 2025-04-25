@@ -250,7 +250,7 @@ a {
   height: 100%;
   border-radius: 30px;
   position: absolute;
-  transition: left 3s ease;
+  transition: all 1s ease;
 }
 
 
@@ -313,11 +313,11 @@ a {
 }
 
 .activNext {
-  animation: show 1.5s forwards;
+  animation: show 1s forwards;
 }
 
 .activPrev {
-  animation: showPrev 1.3s forwards;
+  animation: showPrev 1s forwards;
 }
 
 .baner .li {
