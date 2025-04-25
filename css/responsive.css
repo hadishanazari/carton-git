@@ -2,7 +2,7 @@
 @media (max-width: 768px) {
 
   .baner-main{
-    height: 550px;
+    height: 600px;
   }
     .header .logo{
       display: none;
@@ -130,6 +130,18 @@
     transform: translateX(0px);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
   /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
   
   .productsBox{
@@ -142,8 +154,19 @@
     width: 270px;
     height: 350px;
   }
-
+  .productsText{
+    width: 350px;
+  }
   
+
+
+
+
+
+
+
+
+
   }
   
 
