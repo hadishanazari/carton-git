@@ -327,7 +327,7 @@ a {
   top: -53px;
   right:-680px;
   z-index: -1;
-  border-radius: 50px;
+  border-radius: 30px;
   background-image: url(../images/17.jpeg);
   background-size: cover;
 }
