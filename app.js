@@ -46,7 +46,7 @@ all.forEach((item , index) => {
   setTimeout(() => {
     listPic.classList.remove("moveWidth" , "moveWidthBack");
     btnNext.disabled = false;
-  }, 650)
+  }, 1000)
 
 });
 
@@ -75,12 +75,12 @@ btnPrev.addEventListener("click", () => {
   setTimeout(() => {
     listPic.classList.remove("moveWidth" , "moveWidthBack");
     btnPrev.disabled = false;
-  }, 650)
+  }, 1000)
 
 });
 
 
-////cube
+///cube
 
 const productsBoxBody = document.querySelectorAll('.productsBoxBody');
 
