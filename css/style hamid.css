@@ -313,7 +313,7 @@ a {
 }
 
 .activNext {
-  animation: show 0.7s forwards;
+  animation: show 0.7s linear forwards;
 }
 
 .activPrev {
