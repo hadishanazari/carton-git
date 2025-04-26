@@ -164,11 +164,18 @@
 
     /* cullus */
     .callUs{
-      
+
       height: 250px;
       width: 95%;
       margin:0px auto 70px auto;
     }
+    .callUs .container{
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;;
+      border-bottom-left-radius: 50px;;
+    }
+
   }
   
 
