@@ -177,10 +177,10 @@
     }
     .callUs .title{
       margin-top: 30px;
-      font-size: 16px;
+      font-size: 18px;
     }
     .callUs .text{
-      margin: 20px;
+      margin: 30px 0 0 0;
       text-align: center;
     }
 
