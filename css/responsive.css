@@ -3,6 +3,7 @@
 
   .baner-main{
     height: 600px;
+
   }
     .header .logo{
       display: none;
@@ -161,12 +162,12 @@
 
 
 
-
-
-
-
-
-
+    /* cullus */
+    .callUs{
+      height: 250px;
+      width: 95%;
+      /* margin:0px auto 70px auto; */
+    }
   }
   
 

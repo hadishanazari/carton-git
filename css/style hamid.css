@@ -27,7 +27,8 @@ body .imgFixed {
 
 .main {
   direction: rtl;
-
+justify-content: center;
+align-items: center;
 }
 
 .container {
