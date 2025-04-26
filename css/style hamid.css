@@ -669,7 +669,7 @@ a {
   justify-content: center;
   height: 350px;
   margin-bottom: 70px;
-
+padding: 10px;
 
 }
 
@@ -924,13 +924,15 @@ a {
 }
 
 .footer-right {
-  width: 600px;
-  margin: 90px 0 0 0;
+  padding: 50px;
+  width: 60%;
+  margin-top: 70px;
 }
 
 .footer-center {
-  width: 200px;
-  margin: 90px 50px 0 0;
+  padding:50px;
+  width: 25%;
+  margin-top: 70px;
 }
 
 .footer h3 {

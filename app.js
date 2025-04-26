@@ -153,21 +153,21 @@ productsBoxBody.forEach((productsBoxBody) => {
 
 //////////////////////scrol
 ///////////
-// function revealOnScroll() {
-//   const box = document.querySelector('.samplesBox');
-//   const boxBodies = document.querySelectorAll('.samplesBoxBody');
-//   const windowHeight = window.innerHeight;
-//   const boxTop = box.getBoundingClientRect().top;
-//   const revealPoint = 300;
+function revealOnScroll() {
+  const box = document.querySelector('.samplesBox');
+  const boxBodies = document.querySelectorAll('.samplesBoxBody');
+  const windowHeight = window.innerHeight;
+  const boxTop = box.getBoundingClientRect().top;
+  const revealPoint = 300;
 
-//   if (boxTop < windowHeight - revealPoint) {
-//     boxBodies.forEach((body, index) => {
-//       setTimeout(() => {
-//         body.classList.add('scrollActive');
-//       }, index * 100);
-//     });
-//   }
-// }
+  if (boxTop < windowHeight - revealPoint) {
+    boxBodies.forEach((body, index) => {
+      setTimeout(() => {
+        body.classList.add('scrollActive');
+      }, index * 100);
+    });
+  }
+}
 
-// window.addEventListener('scroll', revealOnScroll);
-// window.addEventListener('load', revealOnScroll);
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
