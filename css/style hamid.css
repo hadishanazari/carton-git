@@ -897,14 +897,6 @@ a {
   overflow: hidden;
 }
 
-/* blog  */
-.blog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  background-color: #3a573f;
-}
 
 /* footer */
 .footer {
