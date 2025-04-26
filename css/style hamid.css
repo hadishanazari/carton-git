@@ -539,13 +539,13 @@ a {
   content: "";
   flex: 1;
   height: 2px;
-  background-color: #2100fb;
+  background-color: gold;
 }
 
 .productsLogoChild {
   width: 10px;
   height: 10px;
-  background-color: #2500f9;
+  background-color: gold;
   border-radius: 50%;
   margin: 20px;
 }
@@ -836,27 +836,13 @@ padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* align-content: flex-start; */
   flex-wrap: wrap;
-  /* gap: 20px 20px; */
   padding: 50px 0px;
   /* width: 100%;
   height: auto; */
   border-radius: 100px;
 
   border: solid 35px rgb(0, 201, 3);
-  /* background-color: #41badc81; */
-  /* background-image: 
-  linear-gradient(to bottom, rgba(5, 13, 57, 0.902) 0%, rgba(0, 255, 17, 0) 50%)
-  ,
-     linear-gradient(to right, rgba(0, 4, 106, 0.8) 0%, rgb(49, 255, 0, 0) 10%)
-     ,
-     linear-gradient(to left, rgba(0, 4, 106, 0.8) 0%, rgb(49, 255, 0, 0) 10%)
-     ,
-    linear-gradient(to top, rgba(5, 13, 57, 0.902) 0%, rgba(0, 255, 17, 0) 50%)
-    ,
-    linear-gradient(to bottom, rgba(26, 74, 195, 0.571) 0%, rgba(26, 74, 195, 0.571) 100%)
-    ; */
 
   background-image:
     linear-gradient(to bottom, rgba(11, 57, 5, 0.902) 0%, rgba(0, 255, 17, 0) 50%),
