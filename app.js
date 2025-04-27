@@ -175,8 +175,17 @@ window.addEventListener('load', revealOnScroll);
 
 
 ////////////////////////
-let icon = document.querySelector('.menuHamber');
+let menuHamber = document.querySelector('.menuHamber');
+let headernav1 = document.querySelector('.header-nav1');
 
-menuHamber.addEventListener("click", ()=>{
+menuHamber.addEventListener("click", () => {
+  headernav1.classList.toggle('active');
+});
 
+
+let a2 = document.querySelector('.a2');
+let headermenuslide1 = document.querySelector('.header-menu-slide1');
+
+a2.addEventListener("click", () => {
+  headermenuslide1.classList.toggle('active');
 });
