@@ -175,18 +175,18 @@ window.addEventListener('load', revealOnScroll);
 
 
 ////////////////////////
-let menuHamber = document.querySelector('.menuHamber');
-let headernav1 = document.querySelector('.header-nav1');
+let headerIcon = document.querySelector('.header__menu-icon-toggle');
+let headernav1 = document.querySelector('.header__nav--mobile');
 
-menuHamber.addEventListener("click", () => {
+headerIcon.addEventListener("click", () => {
   headernav1.classList.toggle('active');
 });
 
 
-let a2 = document.querySelector('.a2');
-let headermenuslide1 = document.querySelector('.header-menu-slide1');
+let activeSubmenu = document.querySelector('.active-submenu');
+let headermenuslide1 = document.querySelector('.header__menu-submenu--mobile');
 
 
-a2.addEventListener("click", () => {
+activeSubmenu.addEventListener("click", () => {
   headermenuslide1.classList.toggle('active');
 });

@@ -3,17 +3,17 @@
     max-width: 750px;
   }
  
-  .header-main{
+  .header__main{
     justify-content: space-between;
   }
-  .menuHamber{
+  .header__menu-icon-toggle{
     display: block;
     margin: 0 10px;
   }
   .header-phone{
     margin: 0 20px;
   }
-  .header .logo {
+.header__logo {
     display: none;
 
   }
