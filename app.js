@@ -171,3 +171,12 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
+
+
+
+////////////////////////
+let icon = document.querySelector('.menuHamber');
+
+menuHamber.addEventListener("click", ()=>{
+
+});
