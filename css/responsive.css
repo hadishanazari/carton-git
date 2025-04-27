@@ -1,10 +1,18 @@
 @media (max-width: 768px) {
-
-  .baner-main {
-    height: 600px;
-
+  .header .container{
+    max-width: 750px;
   }
-
+ 
+  .header-main{
+    justify-content: space-between;
+  }
+  .menuHamber{
+    display: block;
+    margin: 0 20px;
+  }
+  .header-phone{
+    margin: 0 20px;
+  }
   .header .logo {
     display: none;
 
@@ -14,15 +22,10 @@
     display: none;
   }
 
-  /* .list .item:nth-child(5) {
-  width: 75px;
-  height: 110px;
-  top: 305.5px;
-  right: 48px;
-  position: absolute;
-  z-index: 5;
-  border-radius: 15px;
-} */
+.baner-main {
+  height: 600px;
+
+}
   .baner-title {
     text-align: center;
     right: auto;
