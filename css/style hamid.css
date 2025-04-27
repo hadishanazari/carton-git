@@ -838,10 +838,7 @@ padding: 10px;
   justify-content: center;
   flex-wrap: wrap;
   padding: 50px 0px;
-  /* width: 100%;
-  height: auto; */
   border-radius: 100px;
-
   border: solid 35px rgb(0, 201, 3);
 
   background-image:
@@ -886,14 +883,13 @@ padding: 10px;
 
 /* footer */
 .footer {
-  background-color: #4a4f4c;
+
 }
 
 .footer-main {
   display: flex;
   justify-content: center;
   height: 630px;
-  /* background-color: #373737; */
   background-image: url(../images/225.png);
   background-size: cover;
   border-radius: 40px;
