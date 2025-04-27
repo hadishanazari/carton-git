@@ -186,6 +186,7 @@ menuHamber.addEventListener("click", () => {
 let a2 = document.querySelector('.a2');
 let headermenuslide1 = document.querySelector('.header-menu-slide1');
 
+
 a2.addEventListener("click", () => {
   headermenuslide1.classList.toggle('active');
 });
