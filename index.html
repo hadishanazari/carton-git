@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
     <link rel="stylesheet" href="./css/style hamid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -16,14 +17,44 @@
 
         <div class="header">
             <div class="container">
-                <div class="header-main">
-                    <div class="logo">
+                <div class="header__main">
+                    <div class="header__logo">
                         <img src="images/logo.png" alt="">
                     </div>
+                    <div class="header__menu-icon-toggle">
+                        <img src="images/icon.png" alt="">
+                    </div>
+                    <nav class="header__nav--mobile">
+                        <ul class="header__menu--mobile">
+                            <li class="header__menu-list--mobile"><a class="header__menu-link--mobile"
+                                    href="https://hadishanazari.github.io/carton-git/">صفحه اصلی</a>
+                            
+
+                            </li>
+                            <li class="header__menu-list--mobile"> 
+                            <div class="header__menu-link--mobile active-submenu">محصولات</div>
+                            
+                               
+                               <div class="header__menu-submenu--mobile">
+                                <ul> 
+                                    <li class="header__menu-submenu-list--mobile"><a href="https://hadishanazari.github.io/carton-laminet/">کارتن لمینتی</a></li>
+                                    <li class="header__menu-submenu-list--mobile"><a href="">کارتن چاپی</a></li>
+                                    <li class="header__menu-submenu-list--mobile"><a href="">کارتن سه لایه</a></li>
+                                    <li class="header__menu-submenu-list--mobile"><a href="">کارتن پنج لایه</a></li>
+                                </ul>
+                            </div> 
+                            </li>
+                            <li class="header__menu-list--mobile"><a class="header__menu-link--mobile" href="">تماس با ما</a>
+                           
+                            </li>
+                        </ul>
+                    </nav>
+
 
                     <nav class="header-nav">
                         <ul class="header-menu">
-                            <li class="header-menu-li"><a class="header-menu-a line-bottom" href="https://hadishanazari.github.io/carton-git/">صفحه اصلی</a>
+                            <li class="header-menu-li"><a class="header-menu-a line-bottom"
+                                    href="https://hadishanazari.github.io/carton-git/">صفحه اصلی</a>
                                 <div class="line"></div>
 
                             </li>
@@ -41,10 +72,13 @@
                             </li>
                         </ul>
                     </nav>
-                    <p class="header-phone">09134139890</p>
+                    <div class="header__phone">09134139890</div>
                 </div>
             </div>
         </div>
+
+        <div id="widthDisplay"
+            style="position:fixed; top:10px; left:10px; background:#222; color:#fff; padding:5px; z-index:1000;"></div>
 
         <div class="baner">
             <div class="baner-main">
@@ -79,34 +113,34 @@
 
 
                         <div class="li"></div>
-                            <div class="list-picture">
+                        <div class="list-picture">
 
-                                <div class="item1">
-                                    <img src="images/images (8).jpeg" alt="1">
-                                    <div class="shadow-picture"></div>
-                                </div>
+                            <div class="item1">
+                                <img src="images/images (8).jpeg" alt="1">
+                                <div class="shadow-picture"></div>
+                            </div>
 
-                                <div class="item1">
-                                    <img src="images/images (9).jpeg" alt="2">
-                                    <div class="shadow-picture"></div>
-                                </div>
+                            <div class="item1">
+                                <img src="images/images (9).jpeg" alt="2">
+                                <div class="shadow-picture"></div>
+                            </div>
 
-                                <div class="item1">
-                                    <img src="images/images (10).jpeg" alt="2">
-                                    <div class="shadow-picture"></div>
-                                </div>
+                            <div class="item1">
+                                <img src="images/images (10).jpeg" alt="2">
+                                <div class="shadow-picture"></div>
+                            </div>
 
 
-                                <div class="item1">
-                                    <img src="images/images (11).jpeg" alt="3">
-                                    <div class="shadow-picture"></div>
-                                </div>
+                            <div class="item1">
+                                <img src="images/images (11).jpeg" alt="3">
+                                <div class="shadow-picture"></div>
+                            </div>
 
-                                <div class="item1">
-                                    <img src="images/images (12).jpeg" alt="4">
-                                    <div class="shadow"></div>
-                                </div>
-                            
+                            <div class="item1">
+                                <img src="images/images (12).jpeg" alt="4">
+                                <div class="shadow"></div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -243,13 +277,6 @@
 
         </div>
 
-
-        <div class="blog">
-            <div class="container">
-
-
-            </div>
-        </div>
 
         <div class="footer">
             <div class="footer-main">
