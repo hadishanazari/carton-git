@@ -1,29 +1,43 @@
-'use strict'
+const widthDisplay = document.getElementById('widthDisplay');
+
+function updateWidth() {
+  widthDisplay.textContent = `عرض صفحه: ${window.innerWidth}px`;
+}
+
+window.addEventListener('resize', updateWidth);
+updateWidth();
+
+
+
+
+
 let listPic = document.querySelector(".list-picture");
 let list = document.querySelector(".list");
-
 let btnNext = document.getElementById("btnNext");
 let btnPrev = document.getElementById("btnPrev");
-let all = document.querySelectorAll(".item");
-
+let all = Array.from(document.querySelectorAll(".item"));
+let items = Array.from(document.querySelectorAll(".item1"));
 let n = all.length;
 
+let h = [0, 1, 2, 3, 4];
+
 btnNext.addEventListener("click", () => {
-  for (let i = 0; i < n; i++) {
-    all[i].classList.remove("activNext");
-    all[i].classList.remove("activPrev");
-    list.children[i].style.zIndex = 0;
-  }
+
+all.forEach((item , index) => {
+  item.classList.remove("activNext", "activPrev");
+  item.style.zIndex = 0;
+});
 
   list.children[0].classList.add("activNext");
   list.appendChild(list.firstElementChild);
-  ///////////////////////lllllll//////////////////////////
-  ///////////////////////////////////////
 
-  for (let i = 0; i < n; i++) {
-    listPic.children[i].classList.remove("moveLeft");
-    listPic.children[i].classList.remove("moveRight");
-  }
+
+
+  items.forEach((item, index) => {
+    item.classList.remove("moveLeft", "moveRight");
+});
+
+
 
   listPic.children[0].classList.add("moveRight");
   listPic.classList.add("moveWidth");
@@ -31,33 +45,30 @@ btnNext.addEventListener("click", () => {
   listPic.appendChild(listPic.firstElementChild);
   btnNext.disabled = true;
   setTimeout(() => {
-    listPic.classList.remove("moveWidth");
-    listPic.classList.remove("moveWidthBack");
+    listPic.classList.remove("moveWidth" , "moveWidthBack");
     btnNext.disabled = false;
   }, 1000)
 
 });
-//////////////////////////
-///////////////////////////
+
 // /////////////////////prev
 
 btnPrev.addEventListener("click", () => {
-  for (let i = 0; i < n; i++) {
-    all[i].classList.remove("activPrev");
-    all[i].classList.remove("activNext");
-    list.children[i].style.zIndex = 0;
-  }
 
-  list.children[4].style.zIndex = 5;
-  list.children[4].classList.add("activPrev");
-  list.insertBefore(list.lastElementChild, list.firstElementChild);
+  all.forEach((item , index) => {
+    item.classList.remove("activNext", "activPrev");
+    item.style.zIndex = 0;
+  });
 
-  /////////////////////////////////llllllllllllllllll///////////////////////////
-  ////////////////////////
-  for (let i = 0; i < n; i++) {
-    listPic.children[i].classList.remove("moveLeft");
-    listPic.children[i].classList.remove("moveRight");
-  }
+    list.insertBefore(list.lastElementChild, list.firstElementChild);
+    list.children[0].classList.add("activPrev");
+    list.children[0].style.zIndex = 5;
+
+  items.forEach((item , index) => {
+    item.classList.remove("moveLeft" , "moveRight");
+  });
+
+  
   listPic.classList.add("moveWidthBack");
 
   listPic.insertBefore(listPic.lastElementChild, listPic.firstElementChild);
@@ -65,15 +76,18 @@ btnPrev.addEventListener("click", () => {
 
   btnPrev.disabled = true;
   setTimeout(() => {
-    listPic.classList.remove("moveWidth");
-    listPic.classList.remove("moveWidthBack");
+    listPic.classList.remove("moveWidth" , "moveWidthBack");
     btnPrev.disabled = false;
+    list.children[0].style.zIndex = -1;
   }, 1000)
+  setTimeout(() => {
+    list.children[0].style.zIndex = -1;
+  }, 500)
 
 });
 
 
-// cube
+///cube
 
 const productsBoxBody = document.querySelectorAll('.productsBoxBody');
 
@@ -157,3 +171,22 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
+
+
+
+////////////////////////
+let headerIcon = document.querySelector('.header__menu-icon-toggle');
+let headernav1 = document.querySelector('.header__nav--mobile');
+
+headerIcon.addEventListener("click", () => {
+  headernav1.classList.toggle('active');
+});
+
+
+let activeSubmenu = document.querySelector('.active-submenu');
+let headermenuslide1 = document.querySelector('.header__menu-submenu--mobile');
+
+
+activeSubmenu.addEventListener("click", () => {
+  headermenuslide1.classList.toggle('active');
+});
