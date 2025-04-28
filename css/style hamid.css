@@ -73,9 +73,6 @@ a {
   height: auto;
 }
 
-
-<<<<<<< HEAD
-=======
 /* header__menu--mobile */
 .header__menu-icon-toggle {
   width: 60px;
@@ -192,7 +189,6 @@ a {
 /*End header__menu--mobile */
 
 /* header__menu--desktop */
->>>>>>> a1ace3ab749dcaf67c8642bd88399f66d5ed434b
 .header-nav {
   flex-grow: 1;
   display: flex;
