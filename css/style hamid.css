@@ -73,6 +73,7 @@ a {
   height: auto;
 }
 
+
 /* header__menu--mobile */
 .header__menu-icon-toggle {
   width: 60px;
@@ -82,8 +83,8 @@ a {
 
 .header__nav--mobile.active {
   opacity: 1;
-  transform: translateY(0);
   z-index: 10;
+  transform: translateY(0);
 }
 
 .header__menu-icon-toggle img {
@@ -190,41 +191,41 @@ a {
 /*End header__menu--mobile */
 
 /* header__menu--desktop */
-.header-nav {
+.header__nav {
   flex-grow: 1;
   display: flex;
   margin-top: 35px;
 }
 
-.header-menu {
+.header__menu {
   display: flex;
   margin: 0 15px 0 0;
 }
 
-.header-menu li .header-menu-a {
+.header__menu li .header__menu-link {
   padding: 25px 15px;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-.header-menu-li:hover .header-menu-slide {
+.header__menu-list:hover .header__menu-submenu {
   opacity: 1;
   transform: translateY(0);
 }
 
-.header-menu-li:hover .header-menu-slide li {
+.header__menu-list:hover .header__menu-submenu li {
   display: block;
 }
 
-.header-menu-slide li:hover a {
+.header__menu-submenu li:hover a {
   color: #b4f5fc;
 }
 
-.header-menu-li:hover .line {
+.header__menu-list:hover .header__menu-line {
   opacity: 1;
 }
 
-.header-menu-slide {
+.header__menu-submenu {
   position: absolute;
   background-image: linear-gradient(to bottom,
       rgba(37, 37, 37, 0.9) 0%,
@@ -244,31 +245,31 @@ a {
     inset 0px 0px 10px 10px rgb(0, 0, 0, 0.2);
 }
 
-.header-menu-slide li {
+.header__menu-submenu li {
   padding: 15px;
   font-size: 16px;
   display: none;
   border-bottom: 4px solid #727257;
 }
 
-.header-menu-slide a {
+.header__menu-submenu a {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-.header-menu-li:nth-child(2)>.header-menu-a::after {
+.header__menu-list:nth-child(2)>.header__menu-link::after {
   content: "⮟";
   font-size: 10px;
   margin: 0px 8px;
   display: inline-block;
 }
 
-.line-bottom {
+.header__menu-line-bottom {
   border-bottom: 4px solid #c0b34d;
   padding-top: 25px;
 }
 
-.line {
+.header__menu-line {
   border-bottom: 4px solid #c0b34d;
   opacity: 0;
   padding-top: 25px;
@@ -282,7 +283,7 @@ a {
 
 /* baner*/
 
-.baner-main {
+.baner__main {
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -301,7 +302,7 @@ a {
   align-items: center;
 }
 
-.baner-title {
+.baner__title {
   position: absolute;
   color: beige;
   text-shadow: 1px 1px 2px black, 1px 1px 30px blue, 10px 15px 5px darkblue;
@@ -323,13 +324,13 @@ a {
     );
 } */
 
-.baner .slider {
+.baner__slider {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.baner .list {
+.baner__slider-items {
   display: flex;
   position: relative;
   border: solid 3px gold;
@@ -342,7 +343,7 @@ a {
     20px 15px 20px 10px rgb(0, 0, 0, 0.2), 0px 0px 10px 5px rgb(0, 0, 0, 0.2);
 }
 
-.list .item {
+.baner__slider-items .baner__slider-item {
   width: 100%;
   height: 100%;
   border-radius: 30px;
@@ -350,13 +351,13 @@ a {
 }
 
 
-.item img {
+.baner__slider-item img {
   width: 100%;
   height: 100%;
   border-radius: 30px;
 }
 
-/* .list .item:nth-child(5) {
+/* .baner__slider-items .baner__slider-item:nth-child(5) {
   width: 75px;
   position: absolute;
   height: 110px;
@@ -416,7 +417,7 @@ a {
   animation: showPrev 0.8s forwards;
 }
 
-.baner .li {
+.baner__slider-bg-thumbnail {
   position: relative;
   width: 920px;
   height: 180px;
@@ -428,7 +429,7 @@ a {
   background-size: cover;
 }
 
-.baner .list-picture {
+.baner__slider-items-thumbnail {
   position: relative;
   display: flex;
   align-items: center;
@@ -440,7 +441,7 @@ a {
   direction: ltr;
 }
 
-.list-picture .item1 {
+.baner__slider-items-thumbnail .baner__slider-item-thumbnail {
   width: 150px;
   height: 220px;
   border-radius: 30px;
@@ -454,7 +455,7 @@ a {
     0px 0px 3px 2px rgb(0, 0, 0, 0.3);
 }
 
-.item1 img {
+.baner__slider-item-thumbnail img {
   position: relative;
   width: 100%;
   height: 100%;
@@ -521,7 +522,7 @@ a {
 
 
 
-.baner .btns {
+.baner__btns {
   position: relative;
   width: 150px;
   height: 80px;
@@ -530,8 +531,8 @@ a {
   right: 215px;
 }
 
-.baner #btnNext,
-.baner #btnPrev {
+#baner__btnNext,
+#baner__btnPrev {
   width: 50px;
   height: 50px;
   overflow: hidden;
@@ -546,14 +547,14 @@ a {
     inset 0px 0px 4px 3px rgb(0, 0, 0, 0.4);
 }
 
-.baner #btnNext img,
-.baner #btnPrev img {
+#baner__btnNext img,
+#baner__btnPrev img {
   width: 80%;
 
 }
 
-.baner #btnNext:hover,
-.baner #btnPrev:hover {
+#baner__btnNext:hover,
+#baner__btnPrev:hover {
   background: rgb(224, 20, 20);
 
 }
@@ -587,7 +588,7 @@ a {
   margin-bottom: 50px;
 }
 
-.productsText {
+.products__Text {
   width: 700px;
   display: flex;
   padding: 50px;
@@ -608,14 +609,14 @@ a {
 
 }
 
-.productsText h3 {
+.products__Text h3 {
   font-size: 21px;
   color: #fff;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   margin-bottom: 20px;
 }
 
-.productsText p {
+.products__Text p {
   font-size: 18px;
   color: #fff;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -623,7 +624,7 @@ a {
   line-height: 1.8;
 }
 
-.productsLogo {
+.products__logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -632,15 +633,15 @@ a {
   width: 200px;
 }
 
-.productsLogo::before,
-.productsLogo::after {
+.products__logo::before,
+.products__logo::after {
   content: "";
   flex: 1;
   height: 2px;
   background-color: gold;
 }
 
-.productsLogoChild {
+.products__logo-Child{
   width: 10px;
   height: 10px;
   background-color: gold;
@@ -650,7 +651,7 @@ a {
 
 
 
-.productsBox {
+.products__box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -670,7 +671,7 @@ a {
 
 }
 
-.productsBoxBody {
+.products__box-body {
   position: relative;
   display: flex;
   align-items: center;
@@ -789,21 +790,21 @@ a {
     inset 0px 0px 30px 20px rgb(0, 0, 0, 0.4);
 }
 
-.callUs .title {
+.callUs__title {
   color: beige;
   text-shadow: 1px 1px 2px black, 1px 1px 25px blue, 1px 5px 5px darkblue;
   margin-top: 50px;
 }
 
-.callUs .text {
+.callUs__text {
   font-size: 18px;
   margin: 50px;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-/* callUs-button */
-.callUs-button {
+/* callUs__button */
+.callUs__button {
   position: relative;
   border-radius: 10px;
   width: 150px;
@@ -817,7 +818,7 @@ a {
   /* inset 0px 0px 10px 10px rgb(0, 0, 0, 0.2); */
 }
 
-.callUs-button .callUs-btn-text {
+.callUs__button .callUs__btn-text {
   position: absolute;
 
   background-image:
@@ -843,12 +844,12 @@ a {
   transition: transform 0.5s ease;
 }
 
-.callUs-btn:hover .callUs-btn-text {
+.callUs__btn:hover .callUs__btn-text {
   opacity: 0.7;
   transform: translateX(-18px);
 }
 
-.callUs-btn-slid {
+.callUs__btn-sub {
   position: absolute;
   display: flex;
   background-image:
@@ -868,12 +869,12 @@ a {
   transition: transform 0.5s ease;
 }
 
-.callUs-btn-slid img {
+.callUs__btn-sub img {
   width: 10px;
   height: auto;
 }
 
-.callUs-btn:hover .callUs-btn-slid {
+.callUs__btn:hover .callUs__btn-sub {
   transform: translateX(0px);
 }
 
@@ -902,7 +903,7 @@ a {
 
 }
 
-.sampleLogo {
+.sample__logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -911,15 +912,15 @@ a {
   width: 250px;
 }
 
-.sampleLogo::before,
-.sampleLogo::after {
+.sample__logo::before,
+.sample__logo::after {
   content: "";
   flex: 1;
   height: 1px;
   background-color: #97DE33;
 }
 
-.sampleLogoChild {
+.sample__logo-child {
   width: 10px;
   height: 10px;
   background-color: #97DE33;
@@ -929,7 +930,7 @@ a {
 
 
 
-.samplesBox {
+.samples_boxs {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -951,7 +952,7 @@ a {
   clip-path: path('M0 0H1300Q1235 300 1300 600H0Q65 300 0 0Z');
 }
 
-.samplesBoxBody {
+.samples_box-body {
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -964,13 +965,13 @@ a {
   background-color: rgb(255, 215, 0);
 }
 
-.samplesBoxBody.scrollActive {
+.samples_box-body.scrollActive {
   transform: rotatez(0);
   border-radius: 10px;
   border: solid 0px gold;
 }
 
-.samplesBoxBody img {
+.samples_box-body img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -981,7 +982,7 @@ a {
 /* footer */
 .footer {}
 
-.footer-main {
+.footer__main {
   display: flex;
   justify-content: center;
   height: 630px;
@@ -1000,13 +1001,13 @@ a {
   display: flex;
 }
 
-.footer-right {
+.footer__right {
   padding: 50px;
   width: 60%;
   margin-top: 70px;
 }
 
-.footer-center {
+.footer__center {
   padding: 50px;
   width: 30%;
   margin-top: 70px;

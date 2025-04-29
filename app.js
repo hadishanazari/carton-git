@@ -11,12 +11,12 @@ updateWidth();
 
 
 
-let listPic = document.querySelector(".list-picture");
-let list = document.querySelector(".list");
-let btnNext = document.getElementById("btnNext");
-let btnPrev = document.getElementById("btnPrev");
-let all = Array.from(document.querySelectorAll(".item"));
-let items = Array.from(document.querySelectorAll(".item1"));
+let listPic = document.querySelector(".baner__slider-items-thumbnail");
+let sliderItems = document.querySelector(".baner__slider-items");
+let btnNext = document.getElementById("baner__btnNext");
+let btnPrev = document.getElementById("baner__btnPrev");
+let all = Array.from(document.querySelectorAll(".baner__slider-item"));
+let items = Array.from(document.querySelectorAll(".baner__slider-item-thumbnail"));
 let n = all.length;
 
 let h = [0, 1, 2, 3, 4];
@@ -28,8 +28,8 @@ all.forEach((item , index) => {
   item.style.zIndex = 0;
 });
 
-  list.children[0].classList.add("activNext");
-  list.appendChild(list.firstElementChild);
+  sliderItems.children[0].classList.add("activNext");
+  sliderItems.appendChild(sliderItems.firstElementChild);
 
 
 
@@ -60,9 +60,9 @@ btnPrev.addEventListener("click", () => {
     item.style.zIndex = 0;
   });
 
-    list.insertBefore(list.lastElementChild, list.firstElementChild);
-    list.children[0].classList.add("activPrev");
-    list.children[0].style.zIndex = 5;
+    sliderItems.insertBefore(sliderItems.lastElementChild, sliderItems.firstElementChild);
+    sliderItems.children[0].classList.add("activPrev");
+    sliderItems.children[0].style.zIndex = 5;
 
   items.forEach((item , index) => {
     item.classList.remove("moveLeft" , "moveRight");
@@ -89,7 +89,7 @@ btnPrev.addEventListener("click", () => {
 
 ///cube
 
-const productsBoxBody = document.querySelectorAll('.productsBoxBody');
+const productsBoxBody = document.querySelectorAll('.products__box-body');
 
 
 productsBoxBody.forEach((productsBoxBody) => {
@@ -154,8 +154,8 @@ productsBoxBody.forEach((productsBoxBody) => {
 //////////////////////scrol
 ///////////
 function revealOnScroll() {
-  const box = document.querySelector('.samplesBox');
-  const boxBodies = document.querySelectorAll('.samplesBoxBody');
+  const box = document.querySelector('.samples_boxs');
+  const boxBodies = document.querySelectorAll('.samples_box-body');
   const windowHeight = window.innerHeight;
   const boxTop = box.getBoundingClientRect().top;
   const revealPoint = 300;
