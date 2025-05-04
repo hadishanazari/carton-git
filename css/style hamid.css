@@ -689,7 +689,7 @@ a {
 
 .cube {
   top: 80px;
-  width: 180px;
+  width: 160px;
   height: 180px;
   position: absolute;
   transform-style: preserve-3d;
@@ -702,11 +702,6 @@ a {
 }
 
 .face {
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  background: rgba(0, 150, 255, 0.7);
-  border: 2px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -714,20 +709,35 @@ a {
   color: white;
 }
 
+.cube__face-first-FB{
+  position: absolute;
+  width: 160px;
+  height: 180px;
+}
+.cube__face-first-LR{
+  position: absolute;
+  width: 160px;
+  height: 180px;
+}
+.cube__face-first-BT{
+  position: absolute;
+  width: 160px;
+  height: 180px;
+}
 .front {
-  transform: translateZ(90px);
+  transform: translateZ(75px);
 }
 
 .back {
-  transform: rotateY(180deg) translateZ(90px);
+  transform: rotateY(180deg) translateZ(75px);
 }
 
 .left {
-  transform: rotateY(-90deg) translateZ(90px);
+  transform: rotateY(-90deg) translateZ(80px);
 }
 
 .right {
-  transform: rotateY(90deg) translateZ(90px);
+  transform: rotateY(90deg) translateZ(80px);
 }
 
 .top {
@@ -738,6 +748,24 @@ a {
   transform: rotateX(-90deg) translateZ(90px);
 }
 
+.cube__img-FB{
+  position: absolute;
+  width: 160px;
+  height: 180px;
+  border: 1px solid #ffffff;
+}
+.cube__img-LR{
+  position: absolute;
+  width: 150px;
+  height: 180px;
+  border: 1px solid #ffffff;
+}
+.cube__img-BT{
+  position: absolute;
+  width: 160px;
+  height: 150px;
+  border: 1px solid #ffffff;
+}
 .shadowCube {
   position: absolute;
   top: 300px;
