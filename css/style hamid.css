@@ -92,7 +92,7 @@ a {
   height: 100%;
 }
 
-.header__phone {
+.header__phone a {
   padding: 8px 0;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -843,13 +843,6 @@ a {
     linear-gradient(to bottom, beige 0%, rgb(245, 245, 220, 0) 15%),
     linear-gradient(to top, beige 0%, rgb(245, 245, 220, 0) 15%),
     linear-gradient(to top, rgb(8, 8, 241) 0%, rgba(63, 60, 255, 0.5) 100%);
-
-  /* background-image:
-     linear-gradient(to bottom, rgb(11, 42, 245) 0%, rgba(76, 73, 255, 0) 70%),
-     linear-gradient(to top, rgb(8, 8, 241) 0%, rgba(63, 60, 255, 0) 70%),
-     linear-gradient(to bottom, beige 0%, beige 100%); */
-
-  /* background-image: linear-gradient(to bottom, rgb(246, 245, 248) 0%, rgba(29, 0, 251, 0.8) 50% ); */
   height: 35px;
   line-height: 35px;
   font-size: 14px;
