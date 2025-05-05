@@ -752,19 +752,19 @@ a {
   position: absolute;
   width: 160px;
   height: 180px;
-  border: 1px solid #9492a8;
+  border: 1px solid #eae9ee;
 }
 .cube__img-LR{
   position: absolute;
   width: 150px;
   height: 180px;
-  border: 1px solid #9492a8;
+  border: 1px solid #eae9ee;
 }
 .cube__img-BT{
   position: absolute;
   width: 160px;
   height: 150px;
-  border: 1px solid #9492a8;
+  border: 1px solid #cac9d1;
 }
 .shadowCube {
   position: absolute;
