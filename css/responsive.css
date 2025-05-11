@@ -33,11 +33,10 @@
 
   }
 
-  .baner__title {
-    text-align: center;
-    right: auto;
-    font-size: 30px;
-  }
+
+  .baner__title-img-desktop{
+    display: none;
+         }
 
   .baner__slider-items {
     width: 330px;
@@ -254,9 +253,11 @@
  /*End hedar */
 
   /* baner */
-  .baner__title {
-    font-size: 40px;
-  }
+
+  .baner__title-img-desktop{
+ display: none;
+      }
+
 
   .baner__slider-items {
     width: 450px;
@@ -435,6 +436,12 @@
 
 
 @media (min-width: 600px) and (max-width: 1099px) {
+ /* baner */
+ .baner__title-img-desktop{
+  margin: 0;
+  width: 400px;
+    }
+/*End baner */
 
   /* sample */
   .samples_boxs {
@@ -452,6 +459,11 @@
 }
 
 @media (min-width: 1100px) and (max-width: 1300px) {
+ /* baner */
+  .baner__title-img-desktop{
+    margin: 0;
+      }
+/*End baner */
 
   /* sample */
   .samples_boxs {
@@ -466,4 +478,7 @@
     border: solid 70px rgb(52, 252, 255);
   }
   /*End sample */
+}
+@media (max-width: 1300px) {
+
 }
