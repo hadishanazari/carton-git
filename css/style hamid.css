@@ -3,10 +3,15 @@
   margin: 0;
   box-sizing: border-box;
   color: #0b120e;
-  font-family: Tahoma;
+  font-family: 'IRSans', sans-serif;
 
 }
-
+@font-face {
+  font-family: 'IRSans';
+  src: url('../fonts/irsans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body .imgFixed {
   position: fixed;
